@@ -1,0 +1,54 @@
+.info {
+  cursor: pointer;
+  color: #707070;
+  text-decoration: none;
+}
+
+.info > img {
+  object-fit: cover;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.067);
+  border-radius: 123123px;
+  margin-right: 0.4em;
+  vertical-align: middle;
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.disabled {
+  overflow: hidden;
+  height: 320px;
+  max-height: 320px;
+  pointer-events: none;
+  user-select: none;
+  position: relative;
+}
+
+.disabled::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+}
+
+.article {
+  font-family: Georgia, serif;
+  line-height: 1.8em;
+  font-size: 16px;
+  color: #171717;
+}
+
+.subscribe {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

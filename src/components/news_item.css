@@ -1,0 +1,57 @@
+.item-container {
+  display: flex;
+  padding: 1.5rem 1rem;
+  cursor: pointer;
+}
+
+.image {
+  object-fit: cover;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.067);
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.image > img {
+  object-fit: cover;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.067);
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 100%;
+}
+
+.desc {
+  padding-left: 1.25rem;
+  flex: 1 1 auto;
+}
+
+h2 {
+  font-size: 1.25em;
+  font-family: Montserrat, Futura, "Gill Sans", "Gill Sans MT", "Century Gothic",
+    CenturyGothic, sans-serif;
+  color: #171717;
+  padding-top: 0;
+  display: block;
+  margin: 0.83em 0;
+  font-weight: bold;
+}
+
+.author {
+  cursor: pointer;
+  color: #707070;
+  text-decoration: none;
+  padding-left: 32px;
+}
+
+.author > img {
+  object-fit: cover;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.067);
+  border-radius: 123123px;
+  margin-right: 0.4em;
+  vertical-align: middle;
+  margin-left: -32px;
+  max-width: 24px;
+  max-height: 24px;
+}
